@@ -31,6 +31,12 @@ exclude=流量|套餐|到期|剩余|重置|官网|网站|最新网址|防失联|
 ruleset=🟥 Adobe,[]GEOSITE,adobe
 ruleset=🟥 Adobe,[]GEOIP,adobe,no-resolve
 
+; --- PT 玩家养老直连红线 ---
+ruleset=DIRECT,[]GEOSITE,category-public-tracker
+ruleset=DIRECT,[]DOMAIN-KEYWORD,m-team
+ruleset=DIRECT,[]DOMAIN-KEYWORD,tracker
+ruleset=DIRECT,[]DOMAIN-KEYWORD,announce
+
 ; --- 私网直连 ---
 ruleset=DIRECT,[]GEOSITE,private
 ruleset=DIRECT,[]GEOIP,private,no-resolve
